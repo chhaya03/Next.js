@@ -9,3 +9,9 @@ Next.js is a React framework used for building fast and scalable web application
 5) Automatic Code Splitting – Loads only necessary JavaScript for better performance.<br>
 6) Image Optimization – Uses the next/image component for efficient image handling.<br>
 7) Middleware & Edge Functions – Handles requests before they reach the final destination.
+
+<h1>Why Use Next.js?</h1>
+1) SEO-friendly – SSR and SSG improve search engine rankings.<br>
+2) Performance Optimized – Faster page loads with automatic optimizations.<br>
+3) Built-in Routing – Uses a file-based routing system (pages/ directory).<br>
+4) Full-stack Capabilities – Can handle both frontend and backend logic.
