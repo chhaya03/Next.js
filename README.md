@@ -15,3 +15,28 @@ Next.js is a React framework used for building fast and scalable web application
 2) Performance Optimized – Faster page loads with automatic optimizations.<br>
 3) Built-in Routing – Uses a file-based routing system (pages/ directory).<br>
 4) Full-stack Capabilities – Can handle both frontend and backend logic.
+
+
+<h1>Server-Based Components in Next.js</h1>
+
+In Next.js, server-based components (or Server Components) are a key feature introduced in React Server Components (RSC). They allow developers to render components entirely on the server, reducing client-side JavaScript and improving performance.
+<h2>1. Default Server Components</h2>
+By default, all components in the app/ directory are Server Components unless explicitly marked as Client Components.<br>This component renders on the server and sends only HTML to the client.
+<h2>2. Fetching Data in Server Components</h2>
+One advantage of Server Components is the ability to directly fetch data from databases or APIs without needing API routes or useEffect.<br>
+The fetch runs on the server, and only static HTML is sent to the client.
+
+
+<h2>3. When to Use Client Components?</h2>
+Sometimes, we need Client Components when using:<br>
+
+State (useState)<br>
+Effects (useEffect)<br>
+Event Listeners (onClick, onChange)<br>
+Browser APIs (localStorage, window, document)
+
+**📌 To create a Client Component, use "use client" at the top.**
+1) Server Components (default in app/ directory) run on the server and send only HTML.<br>
+2) They allow direct data fetching without exposing API routes.<br>
+3) Client Components are needed for state, effects, and event listeners ("use client").<br>
+4) You can mix Client Components inside Server Components.<br>
