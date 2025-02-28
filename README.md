@@ -40,3 +40,37 @@ Browser APIs (localStorage, window, document)
 2) They allow direct data fetching without exposing API routes.<br>
 3) Client Components are needed for state, effects, and event listeners ("use client").<br>
 4) You can mix Client Components inside Server Components.<br>
+
+
+<h1>Components in nextjs</h1>
+<h1>Image, Script, and Link Components in Next.js</h1>
+Next.js provides optimized built-in components for handling images, scripts, and links efficiently. Here’s how to use them:
+
+<h2>1️⃣ next/image (Optimized Image Component):</h2>
+Next.js provides an *<Image>* component that automatically optimizes images by lazy loading, resizing, and serving them in modern formats.
+
+<h4>Features of next/image</h4>
+✅ Automatic Optimization – Images are resized and optimized.<br>
+✅ Lazy Loading – Only loads when visible in viewport.<br>
+✅ Responsive – Automatically adjusts size for different devices.<br>
+✅ Modern Formats – Converts to WebP when supported.
+
+<h2>2️⃣ next/script (Optimized Script Loading):</h2>
+The <Script> component optimizes how external scripts are loaded in Next.js, improving performance.
+
+<h4>Script Loading Strategies</h4>
+beforeInteractive – Loads script before page is interactive.<br>
+afterInteractive (default) – Loads script after hydration.<br>
+lazyOnload – Loads script after page fully loads.<br>
+✅ Improves performance by deferring unnecessary scripts.<br>
+✅ Avoids render-blocking issues.<br>
+✅ Better SEO and UX as scripts load efficiently.
+
+<h2>3️⃣ next/link (Optimized Client-side Navigation):</h2>
+The <Link> component enables client-side navigation between pages without full page reloads.
+
+<h4>Why Use next/link?</h4>
+✅ Pre-fetching – Loads page in the background for instant navigation.<br>
+✅ Client-side Routing – No full page reloads.<br>
+✅ SEO-friendly – Works with crawlers better than window.location.href.
+
