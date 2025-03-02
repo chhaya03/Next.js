@@ -74,3 +74,4 @@ The <Link> component enables client-side navigation between pages without full p
 ✅ Client-side Routing – No full page reloads.<br>
 ✅ SEO-friendly – Works with crawlers better than window.location.href.
 
+
