@@ -1,4 +1,4 @@
-<h1>What is NextJs</h1>
+<h1>1=>What is NextJs</h1>
 Next.js is a React framework used for building fast and scalable web applications. It provides features like server-side rendering (SSR), static site generation (SSG), client-side rendering (CSR), and API routes, making it ideal for both static websites and dynamic web applications.
 
 <h1>Key Features of Next.js:</h1>
@@ -17,7 +17,7 @@ Next.js is a React framework used for building fast and scalable web application
 4) Full-stack Capabilities – Can handle both frontend and backend logic.
 
 
-<h1>Server-Based Components in Next.js</h1>
+<h1>2=>Server-Based Components in Next.js</h1>
 
 In Next.js, server-based components (or Server Components) are a key feature introduced in React Server Components (RSC). They allow developers to render components entirely on the server, reducing client-side JavaScript and improving performance.
 <h2>1. Default Server Components</h2>
@@ -42,7 +42,7 @@ Browser APIs (localStorage, window, document)
 4) You can mix Client Components inside Server Components.<br>
 
 
-<h1>Components in nextjs</h1>
+<h1>3=>Components in nextjs</h1>
 <h1>Image, Script, and Link Components in Next.js</h1>
 Next.js provides optimized built-in components for handling images, scripts, and links efficiently. Here’s how to use them:
 
@@ -74,4 +74,25 @@ The <Link> component enables client-side navigation between pages without full p
 ✅ Client-side Routing – No full page reloads.<br>
 ✅ SEO-friendly – Works with crawlers better than window.location.href.
 
+<h1>4=>Creating an API Route in App Router</h1>
+In Next.js (App Router), API routes are handled within the app directory using the Route Handlers feature. Unlike the Pages Router (pages/api/), API routes in the App Router are defined inside the app/api/ directory using the request handlers (GET, POST, etc.) within server components.
+
+<h2>🔹 Creating an API Route in App Router:</h2>
+You define API routes inside the app/api/ folder using route.js (JavaScript) .
+
+<h2>🔹 Handling Different HTTP Methods:</h2>
+Next.js App Router supports handling multiple HTTP methods in the same file .
+Handling GET, POST, PUT, DELETE Requests
+import { NextResponse } from "next/server";
+
+export async function POST(request) {}<br>
+ export async function GET(request) {}<br>
+ export async function HEAD(request) {}<br>
+  export async function PUT(request) {}<br>
+  export async function DELETE(request) {}<br>
+  export async function PATCH(request) {}<br>
+  If `OPTIONS` is not defined, Next.js will automatically implement `OPTIONS` and set the appropriate Response `Allow` header depending on the other methods defined in the Route Handler.<br> export async function OPTIONS(request) {}
+
+<h2>🔹 Handling Route Parameters (Dynamic API Routes)</h2>
+To create dynamic API routes, use folder-based routing /api/user/:id .
 
