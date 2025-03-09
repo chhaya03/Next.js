@@ -96,3 +96,21 @@ export async function POST(request) {}<br>
 <h2>🔹 Handling Route Parameters (Dynamic API Routes)</h2>
 To create dynamic API routes, use folder-based routing /api/user/:id .
 
+<h1>Authentication in Next.js</h1>
+This guide provides an overview of implementing authentication in a Next.js application. We will use NextAuth.js, a popular authentication library for Next.js, and JWT (JSON Web Tokens) for session management.<br>
+<h2>Prerequisites</h2>
+Node.js installed<br>
+A Next.js application setup<br>
+Basic knowledge of React and Next.js
+
+<h2>Installation:</h2>
+To get started, install the required dependencies:
+npm install next-auth
+
+<h1>Setting Up Authentication with NextAuth.js:</h1>
+1.Create an API route for authentication:<br>Inside the pages/api/auth/ directory, create [...nextauth].js<br><br>
+2.Set up environment variables:<br>Create a .env.local file in the root of your project:<br> Replace your_github_client_id and your_github_client_secret with actual GitHub OAuth credentials.<br><br>
+
+3.Add authentication to your application:<br>Use useSession from next-auth/react in your components.
+
+
