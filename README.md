@@ -96,7 +96,7 @@ export async function POST(request) {}<br>
 <h2>🔹 Handling Route Parameters (Dynamic API Routes)</h2>
 To create dynamic API routes, use folder-based routing /api/user/:id .
 
-<h1>Authentication in Next.js</h1>
+<h1> 5=> Authentication in Next.js</h1>
 This guide provides an overview of implementing authentication in a Next.js application. We will use NextAuth.js, a popular authentication library for Next.js, and JWT (JSON Web Tokens) for session management.<br>
 <h2>Prerequisites</h2>
 Node.js installed<br>
@@ -114,7 +114,7 @@ npm install next-auth
 3.Add authentication to your application:<br>Use useSession from next-auth/react in your components.
 
 
-<h1>Dynamic Routes:</h1>
+<h1>6=>Dynamic Routes:</h1>
 Dynamic routing allows for flexible URL structures, enabling pages or endpoints to be generated based on dynamic parameters. This is useful in applications that require user profiles, product pages, or any resource-based navigation.
 
 <h2>Features:</h2>
