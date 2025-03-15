@@ -114,3 +114,25 @@ npm install next-auth
 3.Add authentication to your application:<br>Use useSession from next-auth/react in your components.
 
 
+<h1>Dynamic Routes:</h1>
+Dynamic routing allows for flexible URL structures, enabling pages or endpoints to be generated based on dynamic parameters. This is useful in applications that require user profiles, product pages, or any resource-based navigation.
+
+<h2>Features:</h2>
+1) Enables pages to be generated dynamically <br>
+2) Uses route parameters to fetch and display relevant content<br>
+3) Supports nested and optional routes
+
+<h2>Benefits</h2>
+
+SEO-friendly URLs<br>
+Improved user experience<br>
+Scalability for large applications
+
+<h2>Using useRouter:</h2>
+The useRouter hook in Next.js provides access to the router object, which contains information about the current route. This is useful for fetching dynamic route parameters and handling navigation programmatically.
+
+<h2>Key Features of useRouter</h2>
+
+Access to dynamic route parameters (router.query)<br>
+Programmatic navigation using router.push() and router.replace() <br>
+Detect route changes with router.events
