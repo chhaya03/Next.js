@@ -171,7 +171,33 @@ Optimize the layout for SEO and performance.<br>
 Add dark mode support for a better user experience.
 
 
+<h1>8=> Next Navigation Module:</h1>
 
+the next/navigation module provides an improved way to handle navigation within the app, replacing older methods like useRouter() from next/router. It works seamlessly with the App Router (app/ directory) and enables client-side navigation, redirections, and path manipulation.
+<h2>Features of next/navigation:</h2>
+useRouter() – For client-side navigation<br>
+usePathname() – Get the current pathname<br>
+useSearchParams() – Access URL search parameters<br>
+redirect() – Perform server-side redirection<br>
+permanentRedirect() – Perform a permanent (301) redirection
 
+<h3>1. useRouter() – Client-Side Navigation:</h3>
+   Used for navigating between pages programmatically.
 
+ <h3>2. usePathname() – Get Current Pathname:</h3>
+ Useful for checking the current route dynamically.
+
+ <h3>3. useSearchParams() – Access URL Parameters:</h3>
+ Used to get query parameters from the URL.
+
+ <h3>4. redirect() – Server-Side Redirect:</h3>
+ Used inside Server Components or API routes.
+
+ <h3>5. permanentRedirect() – 301 Redirect:</h3>
+ For permanent redirection (useful for SEO).
+
+ <h3>Why Use next/navigation?</h3>
+ Works better with Server Components.<br>
+More optimized for performance.<br>
+Replaces next/router in the App Router (app/ directory).
 
