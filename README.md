@@ -201,3 +201,21 @@ permanentRedirect() – Perform a permanent (301) redirection
 More optimized for performance.<br>
 Replaces next/router in the App Router (app/ directory).
 
+
+there are different data fetching strategies that determine how and when a page is generated. These include SSR (Server-Side Rendering), SSG (Static Site Generation), and ISR (Incremental Static Regeneration).
+
+<h1>1. SSR (Server-Side Rendering):</h1>
+How it works: The page is generated on each request by the server.<br>
+Function used: getServerSideProps()<br>
+Use case: Useful for dynamic data that changes frequently and needs to be up-to-date on each request (e.g., user dashboards, personalized content).
+
+<h1>2. SSG (Static Site Generation):</h1>
+How it works: The page is pre-generated at build time and served as a static file.<br>
+Function used: getStaticProps()<br>
+Use case: Best for pages with data that doesn’t change often (e.g., blog posts, marketing pages, documentation).
+
+<h1>3. ISR (Incremental Static Regeneration):</h1>
+How it works: Similar to SSG, but allows you to update static pages after deployment without rebuilding the entire site.<br>
+Function used: getStaticProps() with revalidate option.<br>
+Use case: Best for data that needs to be periodically updated (e.g., news articles, product listings).
+
